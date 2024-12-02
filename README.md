@@ -7,7 +7,7 @@ A modern and responsive portfolio website built with NextJS and Tailwind CSS.
 [Visit the website](https://javirdz.com)
 
 ## ⚙️ Technologies Used
-- NextJS 15.0.3
+- NextJS 14.0.4
 - Tailwind CSS 3.4.1
 
 ## 🛠️ Setup and Installation

@@ -19,3 +19,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.background-img {
+  background-position: center;
+  background-size: cover;
+}
