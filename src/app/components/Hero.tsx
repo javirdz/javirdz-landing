@@ -1,17 +1,30 @@
-import Image from "next/image";
+'use client'
+
+import {useEffect, useState} from "react"
+import Image from "next/image"
 
 import VueLogo from '@/app/assets/images/tech-logos/vue-logo.png'
 import LaravelLogo from '@/app/assets/images/tech-logos/laravel-logo.png'
+
 import ProfileImg from '@/app/assets/images/javi-rdz-profile-img.png'
+import ProfileImgDark from '@/app/assets/images/javi-rdz-profile-img-dark.png'
 
 export default function Hero() {
+
+    const [ isDarkMode, setIsDarkMode ] = useState<boolean>(false)
+
+    useEffect(() => {
+        const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+        setIsDarkMode(darkMode)
+    }, [])
+
     return (
         <div className={'grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10'}>
             <div
-                className="col-span-1 lg:col-span-2 lg:bg-gradient-to-b bg-gradient-to-t from-zinc-200 to-transparent rounded-b-2xl lg:rounded-2xl p-5 lg:p-10 min-h-96 order-2 lg:order-1">
+                className="col-span-1 lg:col-span-2 lg:bg-gradient-to-b bg-gradient-to-t from-zinc-200 to-transparent dark:from-stone-800 dark:to-transparent rounded-b-2xl lg:rounded-2xl p-5 lg:p-10 min-h-96 order-2 lg:order-1">
 
                 {/* FOR DESKTOP */}
-                <h1 className={' font-display text-4xl font-medium text-black leading-tight hidden lg:block '}>Hello,
+                <h1 className={' font-display text-4xl font-medium leading-tight hidden lg:block '}>Hello,
                     I&#39;m Javi Rodriguez</h1>
                 <h1 className={' mt-1 font-display text-3xl font-medium leading-tight hidden lg:block'}>
                     a
@@ -20,9 +33,9 @@ export default function Hero() {
                 </h1>
 
                 {/* FOR MOBILE */}
-                <h1 className={'font-display text-3xl font-medium text-black leading-tight text-center block lg:hidden'}>Hello</h1>
-                <h1 className={'font-display text-3xl font-medium text-black leading-tight text-center block lg:hidden'}>I&#39;m Javi Rodriguez</h1>
-                <h1 className={'mt-1 font-display text-2xl font-medium text-black leading-tight text-center block lg:hidden'}>
+                <h1 className={'font-display text-3xl font-medium leading-tight text-center block lg:hidden'}>Hello</h1>
+                <h1 className={'font-display text-3xl font-medium leading-tight text-center block lg:hidden'}>I&#39;m Javi Rodriguez</h1>
+                <h1 className={'mt-1 font-display text-2xl font-medium leading-tight text-center block lg:hidden'}>
                     a
                     <span className={'ml-2 mr-2 underline underline-offset-4'}>full-stack developer</span>
                     based in Monterrey, México
@@ -48,12 +61,12 @@ export default function Hero() {
                     collaborate on your next project!</p>
 
                 <div className={'flex gap-3'}>
-                    <a className={'rounded bg-black px-5 py-3 text-base font-semibold text-white hover:bg-white hover:text-black focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-black flex-1 text-center lg:flex-none'}
+                    <a className={'rounded bg-black px-5 py-3 text-base font-semibold text-white hover:bg-white hover:text-black dark:bg-white dark:text-black focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-black flex-1 text-center lg:flex-none'}
                        href="mailto:hello@javirdz.com">
                         Let&#39;s talk
                     </a>
 
-                    <a className={'flex items-center justify-center bg-white text-black rounded w-12 h-12 hover:bg-black hover:text-white'}
+                    <a className={'flex items-center justify-center bg-white text-black rounded w-12 h-12 hover:bg-black hover:text-white dark:bg-stone-900 dark:text-white'}
                        href="https://www.linkedin.com/in/javirdz/" target='_blank'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" x="0px" y="0px" width="100"
                              height="100" viewBox="0 0 30 30" className="size-8">
@@ -62,7 +75,7 @@ export default function Hero() {
                         </svg>
                     </a>
 
-                    <a className={'flex items-center justify-center bg-white text-black rounded w-12 h-12 hover:bg-black hover:text-white'}
+                    <a className={'flex items-center justify-center bg-white text-black rounded w-12 h-12 hover:bg-black hover:text-white dark:bg-stone-900 dark:text-white'}
                        href="https://github.com/javirdz" target='_blank'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" x="0px" y="0px" width="100"
                              height="100" viewBox="0 0 50 50" className="size-8">
@@ -74,7 +87,7 @@ export default function Hero() {
             </div>
             <div className={'bg-white rounded-t-2xl background-img lg:rounded-2xl p-10 min-h-96 order-1 lg:order-2'}
                  style={{
-                     backgroundImage: `url(${ProfileImg.src})`
+                     backgroundImage: `url(${  isDarkMode ? ProfileImgDark.src : ProfileImg.src}) `
                  }}
             ></div>
         </div>
