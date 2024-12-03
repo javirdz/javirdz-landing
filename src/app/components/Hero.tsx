@@ -43,7 +43,7 @@ export default function Hero() {
 
 
                 <div className={'mt-5 mb-5'}>
-                    <p className={'uppercase font-semibold text-xs text-center lg:text-left'}>Specialized in:</p>
+                    <p className={'uppercase font-semibold text-xs text-center lg:text-left dark:text-neutral-300'}>Specialized in:</p>
                     <div className="mt-2 flex gap-3 justify-center lg:justify-start">
                         <Image width={0} height={0} sizes={'100vw'} style={{height: '26px', width: 'auto'}}
                                src={LaravelLogo} alt={'Laravel'}/>
