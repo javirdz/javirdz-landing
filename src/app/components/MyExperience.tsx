@@ -209,7 +209,7 @@ export default function MyExperience() {
                                 </small>
                             </p>
 
-                            <a className="mt-5 rounded flex items-center bg-black px-3 py-2 text-xs font-semibold text-white hover:bg-black hover:text-white focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-white dark:bg-white dark:text-black dark:hover:bg-white dark:hover:text-black"
+                            <a className="mt-5 rounded flex items-center bg-transparent border-2 border-zinc-600 px-3 py-2 text-xs text-zinc-600 font-semibold hover:bg-zinc-600 hover:text-white focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-white dark:border-neutral-100 dark:text-neutral-300 dark:hover:bg-white dark:hover:text-black"
                                href="mailto:hello@javirdz.com">
                                 Any recommendations?
                                 <span className="ml-2">

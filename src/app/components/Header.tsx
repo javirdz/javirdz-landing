@@ -17,7 +17,7 @@ export default function Header() {
                     My experience
                 </a>
 
-                <a className={'hidden lg:block rounded bg-black px-5 py-3 text-base font-semibold text-white dark:bg-white dark:text-black'} href="mailto:hello@javirdz.com">
+                <a className={'rounded bg-black px-5 py-3 text-base font-semibold text-white dark:bg-white dark:text-black'} href="mailto:hello@javirdz.com">
                     Let&#39;s talk
                 </a>
             </div>

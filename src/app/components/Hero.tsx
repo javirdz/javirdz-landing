@@ -1,6 +1,5 @@
 'use client'
 
-import {useEffect, useState} from "react"
 import Image from "next/image"
 
 import VueLogo from '@/app/assets/images/tech-logos/vue-logo.png'
@@ -11,12 +10,12 @@ import ProfileImgDark from '@/app/assets/images/javi-rdz-profile-img-dark.png'
 
 export default function Hero() {
 
-    const [ isDarkMode, setIsDarkMode ] = useState<boolean>(false)
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    useEffect(() => {
+    /*useEffect(() => {
         const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
         setIsDarkMode(darkMode)
-    }, [])
+    }, [])*/
 
     return (
         <div className={'grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10'}>
@@ -85,9 +84,9 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <div className={'bg-white rounded-t-2xl background-img lg:rounded-2xl p-10 min-h-96 order-1 lg:order-2'}
+            <div className={'rounded-t-2xl background-img lg:rounded-2xl p-10 min-h-96 order-1 lg:order-2'}
                  style={{
-                     backgroundImage: `url(${  isDarkMode ? ProfileImgDark.src : ProfileImg.src}) `
+                     backgroundImage: `url(${  prefersDark ? ProfileImgDark.src : ProfileImg.src}) `
                  }}
             ></div>
         </div>

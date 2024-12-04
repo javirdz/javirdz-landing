@@ -8,8 +8,8 @@ export default function Footer() {
             <div className={'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'}>
 
                 <div className={'flex flex-col items-center lg:items-start'}>
-                    <h1 className={'text-center lg:text-left font-display text-4xl font-medium sm:text-5xl text-zinc-800 dark:text-white'}>Let's</h1>
-                    <h1 className={'text-center lg:text-left font-display text-4xl font-medium sm:text-5xl text-zinc-800 dark:text-white'}>work <span className={'text-black dark:text-neutral-300'}>together</span></h1>
+                    <h1 className={'text-center lg:text-left font-display text-4xl font-medium sm:text-5xl text-zinc-800 dark:text-neutral-300'}>Let's</h1>
+                    <h1 className={'text-center lg:text-left font-display text-4xl font-medium sm:text-5xl text-zinc-800 dark:text-neutral-300'}>work <span className={'text-black dark:text-white'}>together</span></h1>
                     <p className={'mt-2 lg:text-left text-center text-zinc-700 dark:text-white'}>Contact me to see how we can elevate your next project together.</p>
 
                     <a className={'mt-5 w-full lg:w-auto flex justify-center items-center rounded bg-black px-5 py-3 text-base font-semibold text-white hover:bg-white hover:text-black dark:bg-white dark:text-black focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-black flex-1 text-center lg:flex-none'}
