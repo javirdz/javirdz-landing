@@ -27,7 +27,7 @@ export default function WhatIDo() {
                     </svg>
                     <p className={'mt-2 text-zinc-800 dark:text-white font-display font-semibold text-lg tracking-wide'}>Web
                         development</p>
-                    <p className={'mt-2 text-zinc-700 dark:text-neutral-300'}>My web development service focuses on delivering websites that are user-friendly, visually appealing, and secure.</p>
+                    <p className={'mt-2 text-zinc-700 dark:text-neutral-300 text-lg leading-relaxed whitespace-pre-wrap'}>My web development service focuses on delivering websites that are user-friendly, visually appealing, and secure.</p>
                     <p className="mt-5 uppercase font-semibold text-xs flex items-center text-zinc-800 dark:text-neutral-300">
                         Tools
                     </p>
@@ -50,7 +50,7 @@ export default function WhatIDo() {
                     </svg>
                     <p className={'mt-2 text-zinc-800 dark:text-white font-display font-semibold text-lg tracking-wide'}>Mobile
                         development</p>
-                    <p className="mt-2 text-zinc-700 dark:text-neutral-300">
+                    <p className="mt-2 text-zinc-700 dark:text-neutral-300 text-lg leading-relaxed whitespace-pre-wrap">
                         I develop custom mobile applications, from apps with specific purposes or limited audiences to large-scale solutions for all types of users.
                     </p>
                     <p className="mt-5 uppercase font-semibold text-xs flex items-center text-zinc-800 dark:text-neutral-300">
@@ -70,7 +70,7 @@ export default function WhatIDo() {
                     </svg>
                     <p className={'mt-2 text-zinc-800 dark:text-white font-display font-semibold text-lg tracking-wide'}>UI/UX
                         design</p>
-                    <p className="mt-2 text-zinc-700 dark:text-neutral-300">
+                    <p className="mt-2 text-zinc-700 dark:text-neutral-300 text-lg leading-relaxed whitespace-pre-wrap">
                         I work closely with you to ensure that the designs I create align with your business objectives and reflect your brand identity.
                     </p>
                     <p className="mt-5 uppercase font-semibold text-xs flex items-center text-zinc-800 dark:text-neutral-300">
